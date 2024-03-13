@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  body{
+    background: url(layer-login-bg.jpg) no-repeat center/cover;
+    color: #fff;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  .header{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .logo{
+    width: 80px;
+    height: auto;
+  }
+  .container{
+    padding: 10px 10%;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+  }
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #f9f9f8;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after{
+    width: 100%;
+  }
+  .para{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  #about{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box{
+    width: 800px;
+    height: auto;
+    margin-bottom: 100px;
+    border-radius: 50px;
+    border: solid #fff;
+    backdrop-filter: blur(20px);
+  }
